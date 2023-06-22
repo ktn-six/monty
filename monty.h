@@ -8,28 +8,33 @@
 #include <string.h>
 #include <ctype.h>
 /**
- * struct stack_s - doubly linked list representation of a stack (or queue)
- * @n: integer
- * @prev: points to the previous element of the stack (or queue)
- * @next: points to the next element of the stack (or queue)
+ * struct stack_s - Doubly linked list representation of a stack (or queue).
+ * @n: Integer value stored in the node.
+ * @prev: Pointer to the previous element of the stack (or queue).
+ * @next: Pointer to the next element of the stack (or queue).
  *
- * Description: doubly linked list node structure
- * for stack, queues, LIFO, FIFO Holberton project
+ * Description: Structure representing a doubly linked list node for stack, queue,
+ *              LIFO, FIFO in the Holberton project.
  */
+
 typedef struct stack_s
 {
 	int n;
 	struct stack_s *prev;
 	struct stack_s *next;
 } stack_t;
+
 /**
- * struct bus_s - variables -args, file, line content
- * @arg: value
- * @file: pointer to monty file
- * @content: line content
- * @lifi: flag change stack <-> queue
- * Description: carries values through the program
+ * struct stack_s - Doubly linked list representation of a stack (or queue).
+ * @n: Integer value stored in the node.
+ * @prev: Pointer to the previous element of the stack (or queue).
+ * @next: Pointer to the next element of the stack (or queue).
+ *
+ * Description: Structure representing a doubly linked list node for stack, queue,
+ *              LIFO, FIFO in the Holberton project.
  */
+
+
 typedef struct bus_s
 {
 	char *arg;
@@ -38,14 +43,18 @@ typedef struct bus_s
 	int lifi;
 }  bus_t;
 extern bus_t bus;
+
+
 /**
- * struct instruction_s - opcode and its function
- * @opcode: the opcode
- * @f: function to handle the opcode
+ * struct instruction_s - Opcode and its corresponding function.
+ * @opcode: The opcode.
+ * @f: Function to handle the opcode.
  *
- * Description: opcode and its function
- * for stack, queues, LIFO, FIFO Holberton project
+ * Description: Structure representing an opcode and its corresponding function
+ *              for the stack, queue, LIFO, and FIFO operations in the Holberton project.
  */
+
+
 typedef struct instruction_s
 {
 	char *opcode;
